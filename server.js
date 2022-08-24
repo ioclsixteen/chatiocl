@@ -20,7 +20,7 @@ let intentMap = new Map();
 
 intentMap.set('Sum',handleWebHookIntent);
 
-agent.handleRequet(intentMap);
+agent.handleRequest(intentMap);
 });
 
 
