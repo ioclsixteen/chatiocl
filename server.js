@@ -5,7 +5,7 @@ app.use(express.json())
 
 
 app.get("/",function(request,response) {
-response.send("<h1>Server is up and working</h1>");
+response.send({"quote":"Personality is to a man what perfume is to a flower."});
 });
 
 app.get("/about",function(request,response) {
