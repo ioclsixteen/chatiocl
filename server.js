@@ -13,12 +13,7 @@ app.use(express.json());
 
 
 app.get('/',function(req,res) {
-    const url = "https://chatiocl.herokuapp.com";
-    https.get(url,function(response) {
-        console.log(response);
-        response.on("data",function(data) {
-        const q = JSON.parse(data);
-        res.send(q)
+    res.send({"quote":"Personality is to a man what perfume is to a flower."});
         })
     })
 });
